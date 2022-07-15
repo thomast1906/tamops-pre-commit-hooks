@@ -1,0 +1,5 @@
+- id: app_gateway_backend_checks
+  name: app_gateway_backend_checks
+  description: Checks-backends
+  entry: pre-commit-hooks/app_gateway_backend_checks.sh
+  language: script
