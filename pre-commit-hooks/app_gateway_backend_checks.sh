@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -x
+set -eo pipefail
 
 for lb_config in `find environments/ -name 'backend_lb_config.yaml'`
 do 
