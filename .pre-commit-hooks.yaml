@@ -3,3 +3,9 @@
   description: Checks-backends
   entry: pre-commit-hooks/app_gateway_backend_checks.sh
   language: script
+  
+- id: exit1
+  name: exit1
+  description: Checks-backends
+  entry: pre-commit-hooks/exit1.sh
+  language: script
