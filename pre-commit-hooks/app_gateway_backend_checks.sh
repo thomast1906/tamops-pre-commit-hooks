@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -eo pipefail
+set -x
 
 for lb_config in `find environments/ -name 'backend_lb_config.yaml'`
 do 
@@ -8,7 +8,7 @@ do
 
         if [ "$app_configuration_number" -gt "3" ]
         then
-            echo "app_configuration in $lb_config: is greater than 100, please change your product/component to use additional gateway"
+            echo "app_configuration in $lb_config: is greater than 100, please change your product/component to use additional gateway" && exit 1
         fi
 
     done
